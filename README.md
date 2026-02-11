@@ -1,92 +1,97 @@
-## Comparative Dataset Analysis and Exploratory Data Mining
-
-### Author
-Michael “Mikey” Morris
+# CSCE 676 – Semester Project
+## Data Mining Project (Phase 1: Data Selection & Initial Analysis)
 
 ---
 
-## Overview
+## Project Context
 
-This project explores and compares three real-world datasets using data mining concepts from CSCE 676, with an emphasis on data properties, algorithmic feasibility, bias, and ethical considerations. The goal is to evaluate which mining techniques are appropriate for each dataset, distinguish between course-covered and external methods, and motivate directions for deeper analysis.
+This repository is part of an individual, semester-long data mining project for CSCE 676. Over the course of the semester, the project will evolve through multiple structured deliverables, gradually narrowing focus and increasing technical depth.
 
-The datasets analyzed are:
+The project milestones include:
 
-- MovieLens (user–movie ratings)
-- Steam Reviews (user-generated game reviews)
-- NASA Exoplanet Archive (astronomical discovery records)
+- Data Selection
+- Initial Research Question
+- Deep Dive Analysis
+- Project Showcase
+- Final Deliverable
 
-Each dataset represents a different data modality (transactional, text-heavy, scientific tabular data), enabling meaningful comparison across mining tasks.
-
----
-
-## Datasets
-
-### 1. MovieLens
-- User–item rating data with timestamps
-- Large-scale transactional dataset
-- Suitable for recommendation systems, association rules, and collaborative filtering
-
-### 2. Steam Reviews
-- Text-based user reviews with temporal and engagement metadata
-- Includes game metadata via joins
-- Suitable for text mining, sentiment analysis, and bias analysis
-
-### 3. NASA Exoplanet Archive
-- Scientific tabular dataset with many numeric features
-- High missingness in derived measurements
-- Suitable for clustering, anomaly detection, and trend analysis
+This phase focuses on dataset identification, preliminary comparison, and exploratory analysis to motivate a well-scoped research direction.
 
 ---
 
-## Analysis Structure
+## Purpose of This Phase
 
-### (B) Comparative Analysis of Datasets
-For each dataset, the following dimensions are evaluated:
-- Supported data mining tasks (course vs. external techniques)
-- Data quality issues (missingness, noise, sparsity)
-- Algorithmic feasibility (scalability of candidate algorithms)
-- Bias considerations (engagement, temporal, sampling bias)
-- Ethical considerations (privacy, power dynamics, misuse risk)
+The goal of this stage is to:
 
-### (C) Dataset Selection
-One dataset is selected for deeper analysis and justified based on:
-- Alignment with course techniques
-- Opportunities for external methods
-- Trade-offs and limitations
+- Identify multiple candidate datasets suitable for data mining
+- Evaluate each dataset’s properties and limitations
+- Assess which course and beyond-course techniques are applicable
+- Understand data quality, bias, and ethical considerations early
+- Select a dataset for deeper investigation in later phases
 
-### (D) Exploratory Data Analysis
-Exploratory analysis includes:
-- Distributional properties
-- Sparsity and skew
-- Temporal patterns
-- Initial signals motivating advanced techniques
-
-### (E) Initial Insights and Direction
-Based on EDA:
-- Key observations are summarized
-- Hypotheses are formed
-- Potential research questions are proposed
+No final modeling decisions are made at this stage.
 
 ---
 
-## Tools and Libraries
+## Candidate Datasets
 
-- Python 3
+Several real-world datasets are examined, chosen to span different data modalities and mining tasks. These include examples of:
+
+- Transactional or interaction data
+- Text-heavy user-generated data
+- Scientific or observational tabular data
+
+Each dataset is analyzed at a high level to understand feasibility, risks, and opportunities for deeper analysis.
+
+---
+
+## Analysis Approach
+
+For each candidate dataset, the following aspects are considered:
+
+- Supported data mining tasks (course techniques vs. external methods)
+- Data quality issues such as missingness, noise, or sparsity
+- Algorithmic feasibility given dataset size and structure
+- Potential sources of bias
+- Ethical and societal considerations
+
+Exploratory data analysis is used to validate assumptions and surface early patterns.
+
+---
+
+## Project Structure
+
+This repository will expand over time. Later phases may include:
+
+- Refined research questions
+- Advanced modeling and evaluation
+- Comparative algorithmic analysis
+- Visualizations and interpretability
+- Final written and presentation artifacts
+
+Code and analysis in this phase are exploratory and may be revised or replaced in later stages.
+
+---
+
+## Tools and Environment
+
+- Python
 - pandas, numpy
 - matplotlib
-- gzip, ast, json
 - Jupyter Notebook / Google Colab
 
----
-
-## Notes on Reproducibility
-
-- Large datasets are sampled where necessary for feasibility.
-- All reported statistics and observations are derived from executed code.
-- External techniques are discussed conceptually unless explicitly implemented.
+Large datasets may be sampled for practicality during early exploration.
 
 ---
 
-## References
+## Reproducibility Notes
 
-Relevant academic work on recommendation systems, association rules, and collaborative filtering is cited using Markdown-compatible references suitable for Jupyter and Google Colab.
+- All observations in this phase are derived from executed code.
+- External techniques are discussed conceptually unless implemented.
+- Dataset handling choices may change as the project scope narrows.
+
+---
+
+## Status
+
+This repository currently reflects the **Data Selection** stage of the semester project. Future deliverables will build on the insights developed here.
